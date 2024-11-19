@@ -45,7 +45,7 @@ export function FullProposalRtlCustomFonts() {
       {/* Target Audience Section */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-2xl font-semibold font-['Sixtyfour']">
+          <CardTitle className="text-2xl font-semibold font-['Bricolage_Grotesque']">
             קהלי יעד ומטרות
           </CardTitle>
         </CardHeader>
@@ -114,7 +114,7 @@ export function FullProposalRtlCustomFonts() {
       {/* Platform Section */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-2xl font-semibold font-['Sixtyfour']">
+          <CardTitle className="text-2xl font-semibold font-['Bricolage_Grotesque']">
             פלטפורמה דיגיטלית משולבת AI
           </CardTitle>
         </CardHeader>
@@ -260,7 +260,7 @@ export function FullProposalRtlCustomFonts() {
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium font-bold">
+                    <TableCell className="font-bold">
                       סה&quot;כ פלטפורמה מלאה
                     </TableCell>
                     <TableCell className="text-left font-bold">
@@ -286,7 +286,7 @@ export function FullProposalRtlCustomFonts() {
       {/* Payment Schedule Section */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-2xl font-semibold font-['Sixtyfour']">
+          <CardTitle className="text-2xl font-semibold font-['Bricolage_Grotesque']">
             לוח תשלומים ואבני דרך
           </CardTitle>
         </CardHeader>
@@ -324,9 +324,7 @@ export function FullProposalRtlCustomFonts() {
                 <TableCell className="text-left">7,326 ₪</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium font-bold">
-                  סה&quot;כ
-                </TableCell>
+                <TableCell className="font-bold">סה&quot;כ</TableCell>
                 <TableCell className="text-left font-bold">73,252 ₪</TableCell>
               </TableRow>
             </TableBody>
