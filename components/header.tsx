@@ -19,10 +19,7 @@ export function Header() {
           <div className="flex flex-col items-end group relative">
             <span className="text-4xl md:text-5xl text-black cursor-help flex items-baseline">
               <span className="font-['Rubik_Dirt'] font-[400]">77</span>
-              <span
-                className="font-['Bricolage_Grotesque'] font-[800]"
-                style={{ letterSpacing: "0.05em" }}
-              >
+              <span className="font-['Bricolage_Grotesque'] font-[800]">
                 ef
               </span>
             </span>
@@ -44,7 +41,7 @@ export function Header() {
                   אינטליגנציה מבוססת AI
                 </p>
                 <p className="text-muted-foreground">
-                  מתמחים בפיתוח מותגים, מוצרים, GTM ובניית כלים חדשניים המעצבים
+                  מתמחים בפיתוח מותגים, מוצרי��, GTM ובניית כלים חדשניים המעצבים
                   את העתיד בכל תעשייה
                 </p>
               </div>

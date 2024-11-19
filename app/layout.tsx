@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import {
-  bricolage,
-  notoSansHebrew,
-  rubikDirt,
-  londrinaSketch,
-} from "@/lib/fonts";
+import Image from "next/image";
+import { bricolage, notoSansHebrew, rubikDirt } from "@/lib/fonts";
 import "./globals.css";
-import { Header } from "@/components/header";
 import { ReduxProvider } from "@/providers/redux-provider";
+import { Header } from "@/components/header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -28,14 +25,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="he"
       dir="rtl"
-      className={`${bricolage.className} ${notoSansHebrew.className} ${rubikDirt.className} ${londrinaSketch.className}`}
+      className={`${bricolage.className} ${notoSansHebrew.className} ${rubikDirt.className}`}
     >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

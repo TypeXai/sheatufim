@@ -1,3 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Londrina+Sketch&family=Noto+Sans+Hebrew:wght@100..900&family=Rubik+Dirt&family=Sixtyfour&display=swap");
+
+.londrina-sketch-regular {
+  font-family: "Londrina Sketch", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bricolage-grotesque {
+  font-family: "Bricolage Grotesque", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bricolage-grotesque-800 {
+  font-weight: 800;
+}
+
+.rubik-dirt-regular {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-sans-hebrew {
+  font-family: "Noto Sans Hebrew", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -81,12 +113,19 @@ body {
     print-color-adjust: exact;
   }
 
-  /* Hide header and buttons */
-  header,
+  /* Remove the header hiding rule and only hide specific elements */
   button,
   .accordion-trigger,
-  [data-state] svg {
+  [data-state] svg,
+  .PDFButton /* Hide only the PDF button */ {
     display: none !important;
+  }
+
+  /* Keep header visible but adjust its styling for print */
+  header {
+    border-bottom: 1px solid #e5e7eb !important;
+    margin-bottom: 2cm !important;
+    padding: 1cm 0 !important;
   }
 
   /* Reset container for print */

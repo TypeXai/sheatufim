@@ -27,10 +27,10 @@ export function FullProposalRtlCustomFonts() {
           <div>
             <h3 className="text-xl font-semibold mb-3">רקע הפרויקט</h3>
             <p className="mb-4 text-muted-foreground">
-              קבוצת מודעות ביוזמת ישתנו עוסקת בשינוי תפיסות גילניות וצמצום הטיות
-              לגבי הזיקנה והעלאת מודעות לתפיסת זיקנה מאוזנת ועדכנית. השותפים
-              ביוזמה מבינים שתפיסות גילניות משפיעות על הזקנים עצמם ועל החברה
-              ומהוות מכשול בפני הובלת שינויים חברתיים משמעותיים.
+              קבוצת מודעות ביוזמת ישתנו עוסקת בשינוי תפיסות גילניות משפיעות על
+              הזיקנה והעלאת מודעות לתפיסת זיקנה מאוזנת ועדכנית. השותפים ביוזמה
+              מבינים שתפיסות גילניות משפיעות על הזקנים עצמם ועל החברה ומהוות
+              מכשול בפני הובלת שינויים חברתיים משמעותיים.
             </p>
             <p className="text-muted-foreground">
               המטרה היא שבירת פרדיגמות ומסגור מחדש של הזיקנה באופן שיקדם תפיסות
@@ -352,33 +352,9 @@ export function FullProposalRtlCustomFonts() {
               <div className="flex items-baseline justify-center gap-2 mb-8 relative group">
                 <span className="font-['Rubik_Dirt'] font-[400] text-5xl text-slate-800 relative">
                   77
-                  <span
-                    className="absolute top-0 left-0 w-full h-full text-pink-500 opacity-0 group-hover:opacity-50 transition-opacity duration-150 animate-pulse"
-                    style={{ clipPath: "inset(50% 0 50%)" }}
-                  >
-                    77
-                  </span>
-                  <span
-                    className="absolute top-0 left-0 w-full h-full text-blue-500 opacity-0 group-hover:opacity-50 transition-opacity duration-150 animate-pulse"
-                    style={{ clipPath: "inset(0 50% 0 50%)" }}
-                  >
-                    77
-                  </span>
                 </span>
                 <span className="font-['Bricolage_Grotesque'] font-[800] text-5xl text-slate-800 relative">
                   ef
-                  <span
-                    className="absolute top-0 left-0 w-full h-full text-pink-500 opacity-0 group-hover:opacity-50 transition-opacity duration-150 animate-pulse"
-                    style={{ clipPath: "inset(50% 0 50%)" }}
-                  >
-                    ef
-                  </span>
-                  <span
-                    className="absolute top-0 left-0 w-full h-full text-blue-500 opacity-0 group-hover:opacity-50 transition-opacity duration-150 animate-pulse"
-                    style={{ clipPath: "inset(0 50% 0 50%)" }}
-                  >
-                    ef
-                  </span>
                 </span>
               </div>
               <h3 className="text-xl font-['Bricolage_Grotesque'] font-[800] text-slate-800 mb-2">
