@@ -1,106 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Londrina+Sketch&family=Noto+Sans+Hebrew:wght@100..900&family=Rubik+Dirt&family=Sixtyfour&display=swap");
-
-.londrina-sketch-regular {
-  font-family: "Londrina Sketch", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.bricolage-grotesque {
-  font-family: "Bricolage Grotesque", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.bricolage-grotesque-800 {
-  font-weight: 800;
-}
-
-.rubik-dirt-regular {
-  font-family: "Rubik Dirt", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.noto-sans-hebrew {
-  font-family: "Noto Sans Hebrew", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans+Hebrew:wght@100..900&family=Rubik+Dirt&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
+  .font-bricolage {
+    font-family: "Bricolage Grotesque", system-ui, -apple-system, sans-serif;
   }
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+
+  .font-rubik-dirt {
+    font-family: "Rubik Dirt", cursive;
+  }
+
+  .font-noto-hebrew {
+    font-family: "Noto Sans Hebrew", sans-serif;
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+.logo-77 {
+  font-family: "Rubik Dirt", cursive !important;
+  font-weight: 400;
+}
+
+.logo-ef {
+  font-family: "Bricolage Grotesque", sans-serif !important;
+  font-weight: 800;
 }
 
 @media print {
@@ -113,28 +38,6 @@ body {
     print-color-adjust: exact;
   }
 
-  /* Remove the header hiding rule and only hide specific elements */
-  button,
-  .accordion-trigger,
-  [data-state] svg,
-  .PDFButton /* Hide only the PDF button */ {
-    display: none !important;
-  }
-
-  /* Keep header visible but adjust its styling for print */
-  header {
-    border-bottom: 1px solid #e5e7eb !important;
-    margin-bottom: 2cm !important;
-    padding: 1cm 0 !important;
-  }
-
-  /* Reset container for print */
-  .container {
-    max-width: none !important;
-    padding: 0 !important;
-  }
-
-  /* Force show ALL accordion content */
   [data-state],
   [data-state="closed"],
   [data-state="open"] {
@@ -149,39 +52,10 @@ body {
     display: block !important;
     height: auto !important;
     opacity: 1 !important;
-    animation: none !important;
-    overflow: visible !important;
     visibility: visible !important;
   }
 
-  /* Ensure proper page breaks */
-  .card {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    margin-bottom: 1cm;
-  }
-
-  /* Remove hover effects */
-  .hover\:bg-white\/50,
-  .hover\:bg-muted\/50 {
-    background: transparent !important;
-  }
-
-  /* Remove animations */
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-
-  /* Ensure all content is visible */
-  .overflow-hidden {
-    overflow: visible !important;
-  }
-
-  /* Additional selectors for Radix UI Accordion */
-  [data-radix-accordion-content] {
-    display: block !important;
-    height: auto !important;
-    visibility: visible !important;
+  button.PDFButton {
+    display: none !important;
   }
 }

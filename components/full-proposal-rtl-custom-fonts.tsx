@@ -271,8 +271,7 @@ export function FullProposalRtlCustomFonts() {
               </Table>
               <div className="bg-blue-50 p-3 rounded-md space-y-2">
                 <p className="text-sm text-muted-foreground">
-                  * מערכת ניהול ה��וכן (CMS) מבוססת Firebase כלולה במחיר פיתוח
-                  האתר
+                  * מערכת ניהול הכן (CMS) מבוססת Firebase כלולה במחיר פיתוח האתר
                 </p>
                 <p className="text-sm text-muted-foreground">
                   * הנחה של 50% על מערכות תומכות ואופטימיזציה
@@ -350,17 +349,17 @@ export function FullProposalRtlCustomFonts() {
             {/* ef77 Brand Section */}
             <div className="text-center mb-16">
               <div className="flex items-baseline justify-center gap-2 mb-8 relative group">
-                <span className="font-['Rubik_Dirt'] font-[400] text-5xl text-slate-800 relative">
+                <span className="logo-77 text-5xl text-slate-800 relative">
                   77
                 </span>
-                <span className="font-['Bricolage_Grotesque'] font-[800] text-5xl text-slate-800 relative">
+                <span className="logo-ef text-5xl text-slate-800 relative">
                   ef
                 </span>
               </div>
-              <h3 className="text-xl font-['Bricolage_Grotesque'] font-[800] text-slate-800 mb-2">
+              <h3 className="text-xl font-bricolage font-[800] text-slate-800 mb-2">
                 Creative Human Intelligence
               </h3>
-              <h4 className="text-lg font-['Bricolage_Grotesque'] font-[600] text-slate-600 mb-4">
+              <h4 className="text-lg font-bricolage font-[600] text-slate-600 mb-4">
                 Amplified by AI
               </h4>
               <p className="text-md text-slate-600 mb-12 max-w-2xl mx-auto">

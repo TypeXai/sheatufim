@@ -7,7 +7,8 @@ import {
 export const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "800"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  fallback: ["system-ui", "arial"],
   preload: true,
 });
 

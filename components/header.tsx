@@ -18,12 +18,10 @@ export function Header() {
         <div className="flex flex-col items-center md:items-end gap-4 md:gap-6">
           <div className="flex flex-col items-end group relative">
             <span className="text-4xl md:text-5xl text-black cursor-help flex items-baseline">
-              <span className="font-['Rubik_Dirt'] font-[400]">77</span>
-              <span className="font-['Bricolage_Grotesque'] font-[800]">
-                ef
-              </span>
+              <span className="logo-77">77</span>
+              <span className="logo-ef">ef</span>
             </span>
-            <span className="text-sm text-muted-foreground mt-1 font-['Bricolage_Grotesque'] font-[800]">
+            <span className="text-sm text-muted-foreground mt-1 font-bricolage font-[800]">
               by Eran Friedman
             </span>
             {/* Tooltip */}
