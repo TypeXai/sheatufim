@@ -100,4 +100,41 @@ body {
     display: block !important;
     height: auto !important;
   }
+
+  /* Make all accordion content visible */
+  [data-state="closed"] {
+    display: block !important;
+  }
+
+  [data-state="open"] {
+    display: block !important;
+  }
+
+  /* Show all accordion content */
+  .accordion-content {
+    display: block !important;
+    height: auto !important;
+    visibility: visible !important;
+  }
+
+  /* Hide accordion triggers in print */
+  button[data-state] {
+    display: none !important;
+  }
+
+  /* Add some spacing between sections */
+  .accordion-item {
+    margin-bottom: 1.5rem !important;
+    page-break-inside: avoid;
+  }
+
+  /* Ensure proper page breaks */
+  .card {
+    page-break-inside: avoid;
+  }
+
+  /* Hide hover effects */
+  .hover\:bg-white\/50 {
+    background: transparent !important;
+  }
 }
