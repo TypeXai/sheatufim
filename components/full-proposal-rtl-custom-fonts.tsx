@@ -271,7 +271,7 @@ export function FullProposalRtlCustomFonts() {
               </Table>
               <div className="bg-blue-50 p-3 rounded-md space-y-2">
                 <p className="text-sm text-muted-foreground">
-                  * מערכת ניהול התוכן (CMS) מבוססת Firebase כלולה במחיר פיתוח
+                  * מערכת ניהול ה��וכן (CMS) מבוססת Firebase כלולה במחיר פיתוח
                   האתר
                 </p>
                 <p className="text-sm text-muted-foreground">
