@@ -6,15 +6,25 @@ import { ReduxProvider } from "@/providers/redux-provider";
 import { Header } from "@/components/header";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: [
+    {
+      path: "./fonts/GeistVF.woff",
+      weight: "100 900",
+      style: "normal",
+    },
+  ],
   variable: "--font-geist-sans",
-  weight: "100 900",
 });
 
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: [
+    {
+      path: "./fonts/GeistMonoVF.woff",
+      weight: "100 900",
+      style: "normal",
+    },
+  ],
   variable: "--font-geist-mono",
-  weight: "100 900",
 });
 
 export const metadata: Metadata = {
