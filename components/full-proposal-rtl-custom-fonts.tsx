@@ -9,7 +9,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { PDFButton } from "@/components/ui/pdf-button";
 
 export function FullProposalRtlCustomFonts() {
   return (
@@ -158,16 +157,51 @@ export function FullProposalRtlCustomFonts() {
 
             <AccordionItem value="item-3">
               <AccordionTrigger className="font-['Rubik_Dirt']">
-                מערכת ניהול תוכן (CMS)
+                מערכת ניהול תוכן (CMS) מבוססת Firebase
               </AccordionTrigger>
               <AccordionContent>
-                <ul className="list-disc list-inside space-y-2 pr-5">
-                  <li>פיתוח CMS מותאם אישית</li>
-                  <li>תי משתמשים והשאות</li>
-                  <li>גרסאות תוכן ותהליך אישור</li>
-                  <li>ניהול תוכן רב-לשוני</li>
-                  <li>ממשק ניהול ידידותי למשתמש</li>
-                </ul>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold mb-2">ניהול תוכן האתר</h4>
+                    <ul className="list-disc list-inside space-y-2 pr-5">
+                      <li>ניהל תכנים בעברית ואנגלית</li>
+                      <li>עריכת מדריכים (גרסה מקוצרת ומורחבת)</li>
+                      <li>ניהול דוגמאות ומקרי בוחן</li>
+                      <li>העלאת ועריכת מדיה</li>
+                      <li>ניהול תגיות ומטא-דאטה</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2">ניהול מחולל ה-AI</h4>
+                    <ul className="list-disc list-inside space-y-2 pr-5">
+                      <li>ניהול פרומפטים וטמפלטים</li>
+                      <li>הגדרת פרמטרים לייצוג חיובי</li>
+                      <li>ניהול גלריית תמונות שנוצרו</li>
+                      <li>מעקב אחר שימוש וצריכת API</li>
+                      <li>ניהול הרשאות משתמשים</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-2">תשתית Firebase</h4>
+                    <ul className="list-disc list-inside space-y-2 pr-5">
+                      <li>אחסון מאובטח בענן</li>
+                      <li>מערכת אימות והרשאות</li>
+                      <li>בסיס נתונים בזמן אמת</li>
+                      <li>גיבוי אוטומטי</li>
+                      <li>אנליטיקס ומעקב ביצועים</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-blue-50 p-3 rounded-md">
+                    <p className="text-sm text-muted-foreground">
+                      * עלויות שיותי Firebase (אחסון, תעבורה וכו׳) כלולות במחיר
+                      עד להיקף שימוש סביר. חריגה תתומחר בנפרד לפי תעריפי Google
+                      Cloud.
+                    </p>
+                  </div>
+                </div>
               </AccordionContent>
             </AccordionItem>
 
@@ -191,9 +225,9 @@ export function FullProposalRtlCustomFonts() {
                 <TableBody>
                   <TableRow>
                     <TableCell className="font-medium">
-                      אתר תוכן מותאם אישית
+                      אתר תוכן מותאם אישית (כולל CMS)
                     </TableCell>
-                    <TableCell className="text-left">15,890 ₪</TableCell>
+                    <TableCell className="text-left">27,365 ₪</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">
@@ -203,61 +237,98 @@ export function FullProposalRtlCustomFonts() {
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium">
-                      מערכת ניהול תוכן (CMS)
-                    </TableCell>
-                    <TableCell className="text-left">11,475 ₪</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className="font-medium">
                       מערכות תומכות ואופטימיזציה
                     </TableCell>
-                    <TableCell className="text-left">13,975 ₪</TableCell>
+                    <TableCell className="text-left">
+                      <span className="line-through text-slate-400 ml-2">
+                        13,975 ₪
+                      </span>
+                      6,987 ₪
+                    </TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="font-medium font-bold">
                       סה&quot;כ פלטפורמה מלאה
                     </TableCell>
                     <TableCell className="text-left font-bold">
-                      80,240 ₪
+                      73,252 ₪
                     </TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
+              <div className="bg-blue-50 p-3 rounded-md space-y-2">
+                <p className="text-sm text-muted-foreground">
+                  * מערכת ניהול התוכן (CMS) מבוססת Firebase כלולה במחיר פיתוח
+                  האתר
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  * הנחה של 50% על מערכות תומכות ואופטימיזציה
+                </p>
+              </div>
             </div>
           </Accordion>
         </CardContent>
       </Card>
 
-      {/* Total Cost Section */}
+      {/* Payment Schedule Section */}
       <Card>
         <CardHeader>
           <CardTitle className="text-2xl font-semibold font-['Sixtyfour']">
-            סך עלות הפרויקט
+            לוח תשלומים ואבני דרך
           </CardTitle>
         </CardHeader>
         <CardContent>
           <Table>
             <TableBody>
               <TableRow>
-                <TableCell className="font-medium">עלות בסיס הפרויקט</TableCell>
-                <TableCell className="text-left">80,240 ₪</TableCell>
+                <TableCell className="font-medium">
+                  מקדמה עם חתימת החוזה (35%)
+                </TableCell>
+                <TableCell className="text-left">25,638 ₪</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">
-                  ניהול פרויקט (15%)
+                  השלמת אפיון מפורט ועיצוב ממשקים (20%)
                 </TableCell>
-                <TableCell className="text-left">12,030 ₪</TableCell>
+                <TableCell className="text-left">14,650 ₪</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">הבטחת איכות (10%)</TableCell>
-                <TableCell className="text-left">8,020 ₪</TableCell>
+                <TableCell className="font-medium">
+                  פיתוח אתר ומערכת ניהול תוכן (20%)
+                </TableCell>
+                <TableCell className="text-left">14,650 ₪</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="font-medium">סה&quot;כ כללי</TableCell>
-                <TableCell className="text-left font-bold">100,240 ₪</TableCell>
+                <TableCell className="font-medium">
+                  השלמת פיתוח מחולל AI ואינטגרציה (15%)
+                </TableCell>
+                <TableCell className="text-left">10,988 ₪</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium">
+                  השלמת בדיקות, הדרכה ועלייה לאוויר (10%)
+                </TableCell>
+                <TableCell className="text-left">7,326 ₪</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="font-medium font-bold">
+                  סה&quot;כ
+                </TableCell>
+                <TableCell className="text-left font-bold">73,252 ₪</TableCell>
               </TableRow>
             </TableBody>
           </Table>
+          <div className="bg-blue-50 p-3 rounded-md mt-4 space-y-2">
+            <p className="text-sm text-muted-foreground">
+              * התשלומים יבוצעו בהתאם להשלמת אבני הדרך המוגדרות
+            </p>
+            <p className="text-sm text-muted-foreground">
+              * לוח זמנים: נובמבר 2024 - 20 בינואר 2025
+            </p>
+            <p className="text-sm text-muted-foreground">
+              * מועד מסירה סופי: 20 בינואר 2025
+            </p>
+          </div>
         </CardContent>
       </Card>
 
@@ -267,47 +338,75 @@ export function FullProposalRtlCustomFonts() {
           <div className="max-w-4xl mx-auto">
             {/* ef77 Brand Section */}
             <div className="text-center mb-16">
-              <div className="flex items-baseline justify-center gap-2 mb-8">
-                <span className="font-['Rubik_Dirt'] font-[400] text-3xl text-slate-800">
+              <div className="flex items-baseline justify-center gap-2 mb-8 relative group">
+                <span className="font-['Rubik_Dirt'] font-[400] text-5xl text-slate-800 relative">
                   77
+                  <span
+                    className="absolute top-0 left-0 w-full h-full text-pink-500 opacity-0 group-hover:opacity-50 transition-opacity duration-150 animate-pulse"
+                    style={{ clipPath: "inset(50% 0 50%)" }}
+                  >
+                    77
+                  </span>
+                  <span
+                    className="absolute top-0 left-0 w-full h-full text-blue-500 opacity-0 group-hover:opacity-50 transition-opacity duration-150 animate-pulse"
+                    style={{ clipPath: "inset(0 50% 0 50%)" }}
+                  >
+                    77
+                  </span>
                 </span>
-                <span className="font-['Bricolage_Grotesque'] font-[800] text-3xl text-slate-800">
+                <span className="font-['Bricolage_Grotesque'] font-[800] text-5xl text-slate-800 relative">
                   ef
+                  <span
+                    className="absolute top-0 left-0 w-full h-full text-pink-500 opacity-0 group-hover:opacity-50 transition-opacity duration-150 animate-pulse"
+                    style={{ clipPath: "inset(50% 0 50%)" }}
+                  >
+                    ef
+                  </span>
+                  <span
+                    className="absolute top-0 left-0 w-full h-full text-blue-500 opacity-0 group-hover:opacity-50 transition-opacity duration-150 animate-pulse"
+                    style={{ clipPath: "inset(0 50% 0 50%)" }}
+                  >
+                    ef
+                  </span>
                 </span>
               </div>
-              <h3 className="text-xl font-['Bricolage_Grotesque'] font-[800] text-slate-800 mb-4">
-                Human Intelligence Amplified by AI Tools
+              <h3 className="text-xl font-['Bricolage_Grotesque'] font-[800] text-slate-800 mb-2">
+                Creative Human Intelligence
               </h3>
+              <h4 className="text-lg font-['Bricolage_Grotesque'] font-[600] text-slate-600 mb-4">
+                Amplified by AI
+              </h4>
               <p className="text-md text-slate-600 mb-12 max-w-2xl mx-auto">
-                סטודיו אסטרטגי המתמחה בהעצמת יכולות אנושיות באמצעות כלי AI
-                מתקדמים, יוצרים פתרונות חדשניים שמשנים את כללי המשחק
+                סטודיו לאסטרטגיה וקריאייטיב המניע מותגים וארגונים קדימה. משלבים
+                חשיבה אסטרטגית עם קריאייטיב פורץ דרך, ומעצימים אותם באמצעות כלי
+                AI מתקדמים.
               </p>
 
               {/* Services Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                 <div className="space-y-2 p-4 rounded-lg hover:bg-white/50 transition-colors">
                   <h4 className="font-semibold text-slate-900">
-                    אסטרטגיה וחדשנות
+                    אסטרטגיה וקריאייטיב
                   </h4>
                   <p className="text-slate-600 text-sm">
-                    מובילים תהליכי חשיבה אסטרטגית המשלבת יצירתיות אנושית עם
-                    יכולות AI מתקדמות
+                    מעצבים אסטרטגיות מותג חדשניות ומייצרים קריאייטיב שמניע
+                    לפעולה, בשילוב עם יכולות AI מתקדמות
+                  </p>
+                </div>
+                <div className="space-y-2 p-4 rounded-lg hover:bg-white/50 transition-colors">
+                  <h4 className="font-semibold text-slate-900">מיתוג וזהות</h4>
+                  <p className="text-slate-600 text-sm">
+                    בונים מותגים חזקים ומבדלים, מפתחים שפה ויזואלית ייחודית,
+                    ומייצרים חוויות מותג בלתי נשכחות
                   </p>
                 </div>
                 <div className="space-y-2 p-4 rounded-lg hover:bg-white/50 transition-colors">
                   <h4 className="font-semibold text-slate-900">
-                    פיתוח כלים חכמים
+                    פתרונות AI חכמים
                   </h4>
                   <p className="text-slate-600 text-sm">
-                    בונים כלים וממשקי AI חדשניים המאפשרים לארגונים להאיץ תהליכים
-                    ולייצר ערך
-                  </p>
-                </div>
-                <div className="space-y-2 p-4 rounded-lg hover:bg-white/50 transition-colors">
-                  <h4 className="font-semibold text-slate-900">ייעוץ והטמעה</h4>
-                  <p className="text-slate-600 text-sm">
-                    מלווים ארגונים בתהליכי הטמעת טכנולוגיות AI, תוך יצירת אימפקט
-                    עסקי מדיד
+                    מפתחים כלים וממשקי AI מתקדמים שמאיצים תהליכים יצירתיים
+                    ומייצרים ערך עסקי מדיד
                   </p>
                 </div>
               </div>
