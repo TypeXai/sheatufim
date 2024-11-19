@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Image from "next/image";
 import { bricolage, notoSansHebrew, rubikDirt } from "@/lib/fonts";
 import "./globals.css";
 import { ReduxProvider } from "@/providers/redux-provider";
@@ -32,16 +31,20 @@ export default function RootLayout({
     <html
       lang="he"
       dir="rtl"
-      className={`${bricolage.className} ${notoSansHebrew.className} ${rubikDirt.className}`}
+      className={`${bricolage?.className || ""} ${
+        notoSansHebrew?.className || ""
+      } ${rubikDirt?.className || ""}`}
     >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ReduxProvider>
-          <header className="w-full py-4 px-6 border-b">
-            <Header />
-          </header>
-          <main className="min-h-screen">{children}</main>
+          <div className="min-h-screen flex flex-col">
+            <header className="w-full py-4 px-6 border-b">
+              <Header />
+            </header>
+            <main className="flex-1">{children}</main>
+          </div>
         </ReduxProvider>
       </body>
     </html>
