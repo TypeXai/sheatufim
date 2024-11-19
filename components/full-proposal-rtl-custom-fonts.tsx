@@ -50,7 +50,16 @@ export function FullProposalRtlCustomFonts() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <Accordion type="multiple" className="w-full">
+          <Accordion
+            type="multiple"
+            className="w-full"
+            defaultValue={[
+              "audience-1",
+              "audience-2",
+              "audience-3",
+              "audience-4",
+            ]}
+          >
             <AccordionItem value="audience-1">
               <AccordionTrigger className="font-['Rubik_Dirt']">
                 ארגוני הרשת
@@ -110,7 +119,11 @@ export function FullProposalRtlCustomFonts() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <Accordion type="multiple" className="w-full space-y-4">
+          <Accordion
+            type="multiple"
+            className="w-full space-y-4"
+            defaultValue={["item-1", "item-2", "item-3", "item-4"]}
+          >
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-['Rubik_Dirt']">
                 אתר תוכן מותאם אישית

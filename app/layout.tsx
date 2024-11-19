@@ -9,6 +9,7 @@ import {
 } from "@/lib/fonts";
 import "./globals.css";
 import { Header } from "@/components/header";
+import { ReduxProvider } from "@/providers/redux-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,10 +41,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="w-full py-4 px-6 border-b">
-          <Header />
-        </header>
-        <main className="min-h-screen">{children}</main>
+        <ReduxProvider>
+          <header className="w-full py-4 px-6 border-b">
+            <Header />
+          </header>
+          <main className="min-h-screen">{children}</main>
+        </ReduxProvider>
       </body>
     </html>
   );

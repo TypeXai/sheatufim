@@ -81,60 +81,68 @@ body {
     print-color-adjust: exact;
   }
 
+  /* Hide header and buttons */
   header,
-  button {
+  button,
+  .accordion-trigger,
+  [data-state] svg {
     display: none !important;
   }
 
+  /* Reset container for print */
   .container {
     max-width: none !important;
     padding: 0 !important;
   }
 
-  /* Ensure all content is visible in the PDF */
-  [data-state="closed"] {
-    display: block !important;
-  }
-
-  .accordion-content {
-    display: block !important;
-    height: auto !important;
-  }
-
-  /* Make all accordion content visible */
-  [data-state="closed"] {
-    display: block !important;
-  }
-
+  /* Force show ALL accordion content */
+  [data-state],
+  [data-state="closed"],
   [data-state="open"] {
     display: block !important;
-  }
-
-  /* Show all accordion content */
-  .accordion-content {
-    display: block !important;
     height: auto !important;
+    opacity: 1 !important;
     visibility: visible !important;
   }
 
-  /* Hide accordion triggers in print */
-  button[data-state] {
-    display: none !important;
-  }
-
-  /* Add some spacing between sections */
-  .accordion-item {
-    margin-bottom: 1.5rem !important;
-    page-break-inside: avoid;
+  .accordion-content,
+  [role="region"] {
+    display: block !important;
+    height: auto !important;
+    opacity: 1 !important;
+    animation: none !important;
+    overflow: visible !important;
+    visibility: visible !important;
   }
 
   /* Ensure proper page breaks */
   .card {
+    break-inside: avoid;
     page-break-inside: avoid;
+    margin-bottom: 1cm;
   }
 
-  /* Hide hover effects */
-  .hover\:bg-white\/50 {
+  /* Remove hover effects */
+  .hover\:bg-white\/50,
+  .hover\:bg-muted\/50 {
     background: transparent !important;
+  }
+
+  /* Remove animations */
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Ensure all content is visible */
+  .overflow-hidden {
+    overflow: visible !important;
+  }
+
+  /* Additional selectors for Radix UI Accordion */
+  [data-radix-accordion-content] {
+    display: block !important;
+    height: auto !important;
+    visibility: visible !important;
   }
 }
