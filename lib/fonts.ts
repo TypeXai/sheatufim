@@ -2,7 +2,6 @@ import {
   Bricolage_Grotesque,
   Noto_Sans_Hebrew,
   Rubik_Dirt,
-  Sixtyfour,
   Londrina_Sketch,
 } from "next/font/google";
 
@@ -23,12 +22,6 @@ export const notoSansHebrew = Noto_Sans_Hebrew({
 });
 
 export const rubikDirt = Rubik_Dirt({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-export const sixtyfour = Sixtyfour({
   weight: "400",
   subsets: ["latin"],
   display: "swap",

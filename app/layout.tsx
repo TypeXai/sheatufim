@@ -4,7 +4,6 @@ import {
   bricolage,
   notoSansHebrew,
   rubikDirt,
-  sixtyfour,
   londrinaSketch,
 } from "@/lib/fonts";
 import "./globals.css";
@@ -36,7 +35,7 @@ export default function RootLayout({
     <html
       lang="he"
       dir="rtl"
-      className={`${bricolage.className} ${notoSansHebrew.className} ${rubikDirt.className} ${sixtyfour.className} ${londrinaSketch.className}`}
+      className={`${bricolage.className} ${notoSansHebrew.className} ${rubikDirt.className} ${londrinaSketch.className}`}
     >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
